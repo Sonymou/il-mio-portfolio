@@ -1,0 +1,219 @@
+/* ==========================================================================
+   1. IMPOSTAZIONI DI SFONDO PER LE PAGINE
+   ========================================================================== */
+
+/* Sfondo per la pagina Index */
+.sfondo-index {
+    background-image: url('foto.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+/* Sfondo per la pagina Storia */
+.sfondo-storia {
+    background-image: url('foto2.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+/* Contenitore centrale per mantenere il sito della larghezza corretta */
+.container {
+    max-width: 800px;
+    margin-left: 0; /* Spinge tutto il blocco a destra dello schermo */
+}
+
+/* ==========================================================================
+   2. STILI DELLA GRAFICA (I TITOLI E I QUADRI SCURI)
+   ========================================================================== */
+
+/* Il titolo grande iniziale (senza scatola attorno) */
+.titolo-index {
+   
+    max-width: 950px;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Rende il testo molto leggibile sulle foto */
+    background-color: rgba(0, 0, 0, 0.4); /* Crea lo sfondo scuro trasparente */
+    border: 2px solid white;               /* Crea il bordino bianco attorno */
+    border-radius: 10px;                   /* Arrotonda gli angoli del bordo */
+    padding: 15px;                         /* Lascia spazio tra il testo e il bordo */
+    display: block;                 /* Impedisce alla scatola di allargarsi troppo */
+}
+.titolo-storia {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    /* 🌟 Questo risolve il tuo problema: */
+    display: table;            /* Stringe la scatola e il bordo solo intorno alla scritta! */
+    margin-left: auto;         /* Centra la scatola rispetto al paragrafo */
+    margin-right: auto;        /* Centra la scatola rispetto al paragrafo */
+    text-align: center;        /* Centra il testo dentro */
+    
+    /* Manteniamo lo stile del bordo che hai scelto tu */
+    background-color: rgba(0, 0, 0, 0.4); 
+    border: 2px solid white;               
+    border-radius: 10px;                   
+    padding: 15px;                         
+}
+/* L'UNICO quadro scuro unito (sfondo scuro trasparente, bordo bianco sottile) */
+.quadro-scuro {
+    background-color: rgba(0, 0, 0, 0.4); /* Il tuo sfondo preferito */
+    border: 2px solid white;               /* Il tuo bordo bianco da 2px */
+    border-radius: 10px;                   /* I tuoi angoli arrotondati a 10px */
+    padding: 30px;                         /* Spazio interno largo originale per respirare */
+    margin-bottom: 25px;                   /* Spazio sotto la scatola */
+    color: white;                          /* Testo bianco */
+    text-align: left;                      /* Forza i testi a SINISTRA */
+}
+
+/* Centra il testo nel blocco contatti dell'index */
+.blocco-contatto {
+    text-align: center;      /* Centra il testo dentro la scatola */
+    max-width: max-content;  /* Stringe la scatola alla larghezza della scrittura */
+    margin-left: 0;       /* Centra tutta la scatola nello schermo */
+    margin-right: auto;      /* Centra tutta la scatola nello schermo */
+    padding: 5px;
+}
+
+/* Spaziatura corretta dei paragrafi della storia */
+.paragrafo-storia {
+    margin-bottom: 18px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* ==========================================================================
+   3. STILI PER I BOTTONI
+   ========================================================================== */
+
+/* Struttura per distanziare e allineare i bottoni */
+.gruppo-bottoni {
+    display: flex;             /* Mette i bottoni sulla stessa riga */
+    justify-content: flex-start;   /* Li tiene centrati o allineati */
+    gap: 20px;                 /* Crea lo spazio orizzontale tra i due bottoni */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* Stile comune dei bottoni chiari dell'Index */
+
+.bottone-chiaro {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    color: white !important;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;         /* Cambiato da 10px a 30px per farlo tondo! */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Effetto morbido */
+}
+
+.bottone-chiaro:hover {
+    background-color: white;     /* Lo sfondo diventa bianco */
+    color: black !important;     /* La scrittura diventa nera */
+}
+
+/* Stile specifico per il bottone della pagina Storia */
+.bottone-home {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.bottone-home:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Stile della barra di navigazione in alto */
+.barra-navigazione {
+    /*display: flex;
+    justify-content: flex-start; /* Tiene i link a sinistra, in linea con il tuo stile */
+   /* gap: 25px;                   /* Spazio tra i due link */
+   /* padding: 20px 0;
+    margin-bottom: 20px;*/
+display: flex;
+    justify-content: flex-start; /* Allinea tutti gli elementi all'inizio */
+    align-items: center;         /* Li mette perfettamente in linea al centro in altezza */
+    gap: 25px;                   /* 🌟 Spazio identico, fisso e ordinato tra TUTTI gli elementi */
+    flex-wrap: wrap;             /* 📱 Se lo schermo è piccolo, gli elementi scendono sotto senza rompersi */
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.link-nav {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+/* Quando il mouse passa sopra i link del menu */
+.link-nav:hover {
+    opacity: 1;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+/*________________________*/
+
+/* 📱 REGOLAZIONI PER SMARTPHONE (Schermi più piccoli di 768px) */
+
+@media (max-width: 768px) {
+    
+    /* Riduce leggermente la dimensione dei titoli per non farli andare a capo male */
+    .titolo-index, .titolo-storia, .titolo-grande {
+        font-size: 1.8rem !important;
+        padding: 10px 15px !important;
+        text-align: center !important;
+    }
+
+    /* Regola il quadro scuro così non esce dallo schermo del telefono */
+    .quadro-scuro {
+        width: 90% !important; /* Prende quasi tutta la larghezza dello schermo del telefono */
+        padding: 15px !important;
+        margin-left:0 !important;
+        margin-right: auto !important;
+    }
+
+    /* Mette i bottoni uno sotto l'altro invece che affiancati, così non si schiacciano */
+    .gruppo-bottoni {
+        flex-direction: column !important;
+        align-items: flex-start !important; /* Mantiene i bottoni allineati a sinistra */
+        gap: 15px !important;
+        margin-left:0 !important;
+        
+
+    }
+
+    .bottone-chiaro {
+        width: auto !important; /* Il bottone si adatta alla lunghezza del testo */
+        text-align: center !important;
+    }
+}
+
+

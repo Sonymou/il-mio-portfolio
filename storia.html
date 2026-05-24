@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>La mia Storia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="sfondo-storia">
+    
+    <div class="container">
+       <nav class="barra-navigazione">
+      <a href="index.html" class="link-nav">Home</a>
+      <a href="storia.html" class="link-nav">La mia Storia</a>
+      <button id="btn-esci" class="link-nav" style="background: none; border: none; cursor: pointer; font-family: inherit; padding: 0;">Esci</button>
+    <select id="selettore-lingua" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid white; border-radius: 5px; padding: 2px 5px; font-weight: bold; cursor: pointer;">
+        <option value="it" style="color: black;">🇮🇹 IT</option>
+        <option value="en" style="color: black;">🇬🇧 EN</option>
+    </select>
+    </nav>
+
+        <h1 class="titolo-storia"> LA MIA STORIA PROFESSIONALE</h1>
+
+        <div class="quadro-scuro">
+            <p class="paragrafo-storia">Salve, mi chiamo Sony.</p>
+            <p class="paragrafo-storia">Nel 2016 ho conseguito la laurea in "Economics and Management" presso l'Università di Cà Foscari, a Venezia.</p>
+            <p class="paragrafo-storia">Ho maturato esperienza lavorativa in amministrazione, marketing, contabilità e fiscale.</p>
+            <p class="paragrafo-storia">Nel 2018 ho concluso il tirocinio come Praticante Esperto Contabile e nel 2019 come Revisore dei Conti.</p>
+            <p class="paragrafo-storia">Attualmente sto frequentando un corso presso l'Unione Nazionale Revisori Legali per l'abilitazione.</p>
+
+            <p class="paragrafo-storia"></p>Accanto a questo percorso, ho deciso di riscoprire e coltivare una mia grande passione: lo sviluppo web.</p>
+
+             <p class="paragrafo-storia">Si tratta in realtà di un ritorno alle origini, poiché avevo già mosso i primi passi con HTML e CSS tra i banchi di scuola, e quel mondo mi è sempre rimasto impresso nella mente.</p>
+             <p class="paragrafo-storia">Spinta dal desiderio di unire la mia precisione analitica all'innovazione digitale, ho ripreso in mano il codice e oggi sto studiando con dedizione HTML5, CSS3 e JavaScript.</p>
+             <p class="paragrafo-storia">Il mio obiettivo è portare la logica e il rigore del mondo amministrativo all'interno della programmazione.</p>
+             <p class="paragrafo-storia">Cerco un'opportunità di stage o un impiego part-time nel settore tech, dove poter far evolvere le mie competenze tecniche e portare un valore concreto a un team di sviluppo.</p>
+
+        </div>
+
+        <div class="gruppo-bottoni">
+            <a href="index.html" class="bottone-home">Torna alla Home</a>
+        </div>
+
+    </div>
+     <script>
+    // 1. GESTIONE BOTTONE ESCI
+    const bottoneEsci = document.getElementById('btn-esci');
+    if (bottoneEsci) {
+        bottoneEsci.addEventListener('click', function() {
+            alert("👋 Arrivederci e buona giornata!");
+        });
+    }
+
+    // 2. GESTIONE SELETTORE LINGUA
+    const selettoreLingua = document.getElementById('selettore-lingua');
+    if (selettoreLingua) {
+        selettoreLingua.addEventListener('change', function() {
+            if (this.value === 'en') {
+                alert("🇬🇧 Language switched to English! (Coming soon)");
+            } else {
+                alert("🇮🇹 Lingua impostata su Italiano!");
+            }
+        });
+    }
+</script>
+</body>
+</html>

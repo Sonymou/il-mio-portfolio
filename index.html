@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Il mio Profilo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="sfondo-index">
+    <div class="container">
+       <!-- <nav class="barra-navigazione">
+         <a href="index.html" class="link-nav">Home</a>
+         <a href="storia.html" class="link-nav">La mia Storia</a>
+
+         <button id="btn-esci" class="link-nav" style="background: none; border: none; cursor: pointer; font-family: inherit; margin-left: 0px; margin-right: 0px;">Esci</button>
+
+         <select id="selettore-lingua" style="background: rgba(255,255,255,0.2); color: white; border: 1px    solid white; border-radius: 5px; padding: 2px 5px; font-weight: bold; cursor: pointer;">
+          <option value="it" style="color: black;">🇮🇹 IT</option>
+          <option value="en" style="color: black;">🇬🇧 EN</option>
+         </select>
+       </nav> -->
+
+    <nav class="barra-navigazione">
+      <a href="index.html" class="link-nav">Home</a>
+      <a href="storia.html" class="link-nav">La mia Storia</a>
+      <button id="btn-esci" class="link-nav" style="background: none; border: none; cursor: pointer; font-family: inherit; padding: 0;">Esci</button>
+    <select id="selettore-lingua" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid white; border-radius: 5px; padding: 2px 5px; font-weight: bold; cursor: pointer;">
+        <option value="it" style="color: black;">🇮🇹 IT</option>
+        <option value="en" style="color: black;">🇬🇧 EN</option>
+    </select>
+    </nav>
+
+        <h1 class="titolo-index">BENVENUTI NELLA MIA POSTAZIONE CREATIVA DI VENEZIA!</h1>
+
+        <div class="quadro-scuro">
+            <h2>Ciao, sono una Web Developer in formazione!</h2>
+            <p>
+                Benvenuti nella mia prima pagina professionale. Sto studiando <strong>HTML5</strong> e 
+                <strong>CSS3</strong> (e presto anche <strong>JavaScript</strong>!) per trasformare la mia passione in un lavoro a Venezia e Mestre.
+            </p>
+            
+            <h3>Le mie competenze attuali:</h3>
+            <ul>
+                <li>Struttura HTML5 pulita;</li>
+                <li>Stile moderno con CSS;</li>
+                <li>Studio attivo di JavaScript per la logica web.</li>
+            </ul>
+        </div>
+
+        <div class="quadro-scuro blocco-contatto">
+            <p>Vuoi saperne di più? Contattami!</p>
+        </div>
+        <div class="gruppo-bottoni">
+            <a href="mailto:sonyafrinweb@gmail.com" class="bottone-chiaro">Inviami una Email</a>
+            <a href="storia.html" class="bottone-chiaro">Leggi la mia storia</a>
+        </div>
+
+    </div>
+  <script>
+    // 1. GESTIONE BOTTONE ESCI
+    const bottoneEsci = document.getElementById('btn-esci');
+    if (bottoneEsci) {
+        bottoneEsci.addEventListener('click', function() {
+            alert("👋 Arrivederci e buona giornata!");
+        });
+    }
+
+    // 2. GESTIONE SELETTORE LINGUA
+    const selettoreLingua = document.getElementById('selettore-lingua');
+    if (selettoreLingua) {
+        selettoreLingua.addEventListener('change', function() {
+            if (this.value === 'en') {
+                alert("🇬🇧 Language switched to English! (Coming soon)");
+            } else {
+                alert("🇮🇹 Lingua impostata su Italiano!");
+            }
+        });
+    }
+</script>
+</body>
+</html>
+
