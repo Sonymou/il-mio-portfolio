@@ -196,8 +196,8 @@ display: flex;
     .quadro-scuro {
         width: 90% !important; /* Prende quasi tutta la larghezza dello schermo del telefono */
         padding: 15px !important;
-        margin: 10px auto; /* Centralo meglio */
-        font-size: 14px; /* Riduci leggermente il testo se serve */
+        margin: 10px auto !important; 
+        font-size: 14px !important;
         
     }
 
