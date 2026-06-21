@@ -196,8 +196,9 @@ display: flex;
     .quadro-scuro {
         width: 90% !important; /* Prende quasi tutta la larghezza dello schermo del telefono */
         padding: 15px !important;
-        margin-left:0 !important;
-        margin-right: auto !important;
+        margin: 10px auto; /* Centralo meglio */
+        font-size: 14px; /* Riduci leggermente il testo se serve */
+        
     }
 
     /* Mette i bottoni uno sotto l'altro invece che affiancati, così non si schiacciano */
