@@ -194,10 +194,11 @@ display: flex;
 
     /* Regola il quadro scuro così non esce dallo schermo del telefono */
     .quadro-scuro {
-        width: 90% !important; /* Prende quasi tutta la larghezza dello schermo del telefono */
-        padding: 15px !important;
-        margin: 10px auto !important; 
-        font-size: 14px !important;
+       width: 90% !important; /* Prende quasi tutta la larghezza dello schermo del telefono */
+       padding: 15px !important;
+       margin-left: auto !important;
+       margin-right: auto !important;
+        
         
     }
 
